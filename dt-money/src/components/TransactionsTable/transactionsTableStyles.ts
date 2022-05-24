@@ -9,20 +9,33 @@ export const Container = styled.div`
     width: 100%;
     border-spacing: 0 0.5rem;
 
-
     th{
       color: var(--text-body);
       font-weight: 400px;
       padding: 1rem 2rem;
       text-align: left;
       line-height: 1.5rem;
-    }
+    } 
 
     td {
       padding: 1rem 2rem;
       border: 0;
       background: var(--shape);
       font-weight: 400px;
+
+      &:first-child {
+        color: var(--text-body)
+      }
+
+      &.deposit{
+        color: var(--green)
+      }
+
+      &.withdraw{
+        color: var(--red)
+      }
+
+      
     }
   }
 
